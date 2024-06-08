@@ -22,6 +22,25 @@ number is within 5 of 100.
 // CHALLENGE: Can you design a function that would return true if a given number
 // is within X of another given number Y?
 
+/*Read the problem statement.
+Determine that the function needs to check proximity to the number 100.
+Clarify that proximity means being within a range of 5 units either below or above 100.
+*/
+
+/*Define a function named within5Of100 that takes a parameter num.
+    Compute the absolute difference between num and 100.
+    If the absolute difference is less than or equal to 5:
+        Return true
+    Else:
+        Return false
+*/
+function within5Of100(num){
+    return (94 < num ) && (num < 106);
+}
+
+console.log(within5Of100(93));
+
+
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = within5Of100;

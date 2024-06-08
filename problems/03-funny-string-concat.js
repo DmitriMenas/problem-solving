@@ -21,6 +21,18 @@ uses the String `substring` method--look it up on MDN!--and consists of only one
 line inside the function block.
 */
 
+/**
+define a function called funnyStringConcat that takes in 2 string parameters
+use str1 and str2 for the names
+the function should return a single string that contians the first 3 letters of str1 and the last 3 letters of str2
+one that is done, use the substing method to write the function with 1 line of code 
+*/
+
+function funnyStringConcat(str1, str2) {
+    return str1.substring(0,3) + str2.substring(str2.length-3)
+}
+
+console.log(funnyStringConcat('number', 'soldier'))
 
 // console.log(funnyStringConcat("abc", "def"));  //=> "abcdef"
 // console.log(funnyStringConcat("number", "soldier"));  //=> "numier"
